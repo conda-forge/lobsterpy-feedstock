@@ -1,21 +1,21 @@
-From 9c7883edb68745ec43e6b7df632fa93b9e0393fd Mon Sep 17 00:00:00 2001
-From: Jan Janssen <janssen@lanl.gov>
-Date: Wed, 26 Jul 2023 16:45:43 -0600
-Subject: [PATCH] patch setup
+From 6999ee3850438951ce5e0b13e9972d57ca2846c1 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Sat, 12 Aug 2023 15:37:51 -0600
+Subject: [PATCH] Update pyproject.toml
 
 ---
- setup.py | 1 -
+ pyproject.toml | 1 -
  1 file changed, 1 deletion(-)
 
-diff --git a/setup.py b/setup.py
-index 229c17f..dae2bc5 100644
---- a/setup.py
-+++ b/setup.py
-@@ -20,7 +20,6 @@
-     install_requires=[
-         "pymatgen>=2023.1.20",
-         "numpy",
--        "typing",
-         "Sphinx>=4",
-         "sphinx-argparse==0.4.0",
-         "sphinx-pdj-theme==0.2.1",
+diff --git a/pyproject.toml b/pyproject.toml
+index 88f72d9..505281d 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -26,7 +26,6 @@ requires-python = ">=3.8"
+ dependencies = [
+      "pymatgen>=2023.1.20",
+      "numpy",
+-     "typing",
+      "Sphinx>=4",
+      "sphinx-argparse==0.4.0",
+      "sphinx-pdj-theme==0.2.1",
