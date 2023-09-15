@@ -1,6 +1,6 @@
-From 6999ee3850438951ce5e0b13e9972d57ca2846c1 Mon Sep 17 00:00:00 2001
+From bcaa2f23e4ad775e2390a4a47cc0467ebb9cf788 Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Sat, 12 Aug 2023 15:37:51 -0600
+Date: Fri, 15 Sep 2023 06:53:05 +0200
 Subject: [PATCH] Update pyproject.toml
 
 ---
@@ -8,14 +8,14 @@ Subject: [PATCH] Update pyproject.toml
  1 file changed, 1 deletion(-)
 
 diff --git a/pyproject.toml b/pyproject.toml
-index 88f72d9..505281d 100644
+index d7b8d24..fc85c19 100644
 --- a/pyproject.toml
 +++ b/pyproject.toml
-@@ -26,7 +26,6 @@ requires-python = ">=3.8"
+@@ -26,7 +26,6 @@ requires-python = ">=3.9"
  dependencies = [
-      "pymatgen>=2023.1.20",
+      "pymatgen>=2023.9.10",
       "numpy",
 -     "typing",
-      "Sphinx>=4",
-      "sphinx-argparse==0.4.0",
-      "sphinx-pdj-theme==0.2.1",
+ ]
+ 
+ [project.urls]
