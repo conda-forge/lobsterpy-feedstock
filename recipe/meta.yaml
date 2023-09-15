@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lobsterpy-{{ version }}.tar.gz
   sha256: 5d307d802709fd15127b258c3e4a43e94fb56a476f6cae0a3e68f254234c73d3
+  patches:
+    - setup.patch
 
 build:
   entry_points:
@@ -22,12 +24,9 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - pymatgen >=2023.1.20
+    - pymatgen >=2023.9.10
     - numpy
     - typing
-    - sphinx >=4
-    - sphinx-argparse ==0.4.0
-    - sphinx-pdj-theme ==0.2.1
 
 test:
   imports:
