@@ -15,15 +15,17 @@ build:
   entry_points:
     - lobsterpy = lobsterpy.cli:main
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.9
+    - setuptools >=65.0.0
+    - wheel
     - pip
   run:
-    - python >=3.6
+    - python >=3.9
     - pymatgen >=2023.9.10
     - numpy
     - typing
@@ -39,7 +41,7 @@ test:
 
 about:
   home: https://github.com/jageo/lobsterpy
-  summary: Package for autmatic bonding analysis with Lobster/VASP
+  summary: Package for automatic bonding analysis with Lobster/VASP
   license: BSD-3-Clause
   license_file: LICENSE
 
