@@ -7,7 +7,7 @@ Home: https://github.com/jageo/lobsterpy
 
 Package license: BSD-3-Clause
 
-Summary: Package for autmatic bonding analysis with Lobster/VASP
+Summary: Package for automatic bonding analysis with Lobster/VASP
 
 Current build status
 ====================
