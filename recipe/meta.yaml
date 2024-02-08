@@ -20,12 +20,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python <3.12,>=3.9
     - setuptools >=65.0.0
     - wheel
     - pip
   run:
-    - python >=3.9
+    - python <3.12,>=3.9
     - pymatgen >=2023.9.10
     - numpy
     - typing
