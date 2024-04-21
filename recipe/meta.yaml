@@ -1,5 +1,5 @@
 {% set name = "lobsterpy" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lobsterpy-{{ version }}.tar.gz
-  sha256: d0cf79f46ce14cb6c40ed0e79877cb362aff2723d52d42a4ee5ffd4132921ff4
+  sha256: 6fbfbbceb71e65b33be9b383c8928d5742ed856f2a4da85f4704cdb25946073b
   patches:
     - setup.patch
 
@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python <3.12,>=3.9
-    - pymatgen >=2024.2.23
+    - pymatgen >=2024.4.13
     - numpy
     - typing
 
