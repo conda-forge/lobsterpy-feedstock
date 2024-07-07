@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lobsterpy-{{ version }}.tar.gz
   sha256: 51790a2ea8d4688ddd3a7fa0fae33f01cc2d5bc52309124aa644a35fb67be50f
+  patches:
+    - setup.patch
 
 build:
   entry_points:
