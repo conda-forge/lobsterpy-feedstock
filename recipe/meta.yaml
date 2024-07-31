@@ -1,5 +1,5 @@
 {% set name = "lobsterpy" %}
-{% set version = "0.4.6" %}
+{% set version = "0.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lobsterpy-{{ version }}.tar.gz
-  sha256: 0e6ee139cd9c51cb69da1513dbc83b717fb3c2a9e61fcbc39d28b03946e60782
+  sha256: 132b8c1a14b77180222e4b03014f4f076037cef3074b7052593c2e42f4d8440b
   patches:
     - setup.patch
 
