@@ -143,5 +143,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@JaGeo](https://github.com/JaGeo/)
 * [@jan-janssen](https://github.com/jan-janssen/)
+* [@naik-aakash](https://github.com/naik-aakash/)
 
