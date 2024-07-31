@@ -16,7 +16,7 @@ build:
     - lobsterpy = lobsterpy.cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -47,4 +47,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - JaGeo
+    - naik-aakash
     - jan-janssen
