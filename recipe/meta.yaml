@@ -18,15 +18,16 @@ build:
 
 requirements:
   host:
-    - python <3.12,>=3.9
+    - python {{ python_min }}
     - setuptools >=65.0.0
     - wheel
     - pip
   run:
-    - python <3.12,>=3.9
+    - python >={{ python_min }}
     - pymatgen >=2024.10.22
     - numpy <3.0.0
     - typing
+    - mendeleev
 
 test:
   imports:
@@ -36,6 +37,7 @@ test:
     - lobsterpy --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/jageo/lobsterpy
