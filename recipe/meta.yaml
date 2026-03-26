@@ -1,6 +1,6 @@
 {% set name = "lobsterpy" %}
-{% set version = "0.5.8" %}
-{% set python_min = "3.10" %}
+{% set version = "0.6.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lobsterpy-{{ version }}.tar.gz
-  sha256: 0e08e9bba7ddfdc5d60c3359a9da0e4bb278933a9eda45174cee54d17acd20a0
+  sha256: 7745e92e2517eba436289562a3878419d23bef651142602c91e99cd4eeaff44a
 
 build:
   entry_points:
