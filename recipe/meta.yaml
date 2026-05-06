@@ -1,5 +1,5 @@
 {% set name = "lobsterpy" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lobsterpy-{{ version }}.tar.gz
-  sha256: 7745e92e2517eba436289562a3878419d23bef651142602c91e99cd4eeaff44a
+  sha256: dd38695da64738a77d31dd91ed8608610a8a23b8885106a6bf87b751591c640c
 
 build:
   entry_points:
@@ -25,7 +25,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pymatgen >=2024.10.22
+    - pymatgen >=2026.5.4
     - numpy <3.0.0
     - typing
     - mendeleev
