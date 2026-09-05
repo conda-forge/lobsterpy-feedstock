@@ -1,0 +1,60 @@
+schema_version: 1
+
+context:
+  name: lobsterpy
+  version: "0.6.1"
+  python_min: "3.11"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/lobsterpy-${{ version }}.tar.gz
+  sha256: dd38695da64738a77d31dd91ed8608610a8a23b8885106a6bf87b751591c640c
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  python:
+    entry_points:
+      - lobsterpy = lobsterpy.cli:main
+
+requirements:
+  host:
+    - python 3.11.*
+    - setuptools >=65.0.0
+    - wheel
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - pymatgen >=2026.5.4
+    - numpy <3.0.0
+    - typing
+    - mendeleev
+
+tests:
+  - python:
+      imports:
+        - lobsterpy
+      pip_check: true
+      python_version: ${{ python_min }}
+  - requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+    script:
+      - lobsterpy --help
+
+about:
+  summary: Package for automatic bonding analysis with Lobster/VASP
+  license: BSD-3-Clause
+  license_file: LICENSE
+  homepage: https://github.com/jageo/lobsterpy
+
+extra:
+  recipe-maintainers:
+    - JaGeo
+    - naik-aakash
+    - jan-janssen
